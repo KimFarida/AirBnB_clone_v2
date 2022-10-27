@@ -5,7 +5,7 @@ apt-get update
 apt-get install -y nginx
 
 sudo mkdir -p /data/web_static/releases/test
-sudo echo "This is a fake content" > /data/web_static/releases/test/index.html
+echo "This is a fake content" > /data/web_static/releases/test/index.html
 sudo mkdir /data/web_static/shared/
 sudo ln -s /data/web_static/releases/test/ /data/web_static/current
 sudo chown -R ubuntu:ubuntu /data/
