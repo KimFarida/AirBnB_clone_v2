@@ -11,10 +11,12 @@ def hello():
     """displays Hello HBNB!"""
     return "Hello HBNB!"
 
+
 @app.route("/hbnb", strict_slashes=False)
 def hbnb():
     """displays HBNB"""
     return "HBNB"
+
 
 @app.route("/c/<text>", strict_slashes=False)
 def c(text):
@@ -22,6 +24,7 @@ def c(text):
     text = text.replace('_', ' ')
     return "C {}".format(text)
     #return 'C %s' % text.replace('_', ' ')
+
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0")
