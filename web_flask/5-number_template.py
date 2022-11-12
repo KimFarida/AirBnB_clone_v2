@@ -23,7 +23,6 @@ def c(text):
     """display 'C' followed by the value of <text>"""
     text = text.replace('_', ' ')
     return "C {}".format(text)
-    #return 'C %s' % text.replace('_', ' ')
 
 
 @app.route("/python", strict_slashes=False)
